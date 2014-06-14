@@ -1,0 +1,10 @@
+#
+# Tarea 2 - Compiladores
+# Ejemplo Fibonacci
+#
+
+fibo = (n) -> f = fibo(n-1) + fibo(n-2) if n > 1; f = 1 if n <= 1; f;
+
+fibos = [fibo(0), fibo(1), fibo(2), fibo(3), fibo(4), fibo(5)]
+
+alert fibos
