@@ -702,6 +702,23 @@ void sigLex()
 			if (c==EOF)
 				error("Se llego al fin de archivo sin finalizar un comentario");
 		}
+		else if (c=='#')
+		{
+			//elimina el comentario
+			//sprintf(t.compLex,"");
+			while(c!=EOF)
+			{
+				c=fgetc(archivo);
+				if (c=='\n'){
+					ungetc(c,archivo);
+					break;
+                }
+					
+			}
+			if (c==EOF)
+				error("Se llego al fin de archivo sin finalizar un comentario");
+			break;
+		}
 		else if (c!=EOF)
 		{
 			sprintf(msg,"%c no esperado",c);
