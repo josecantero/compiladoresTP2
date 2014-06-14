@@ -1,0 +1,22 @@
+#
+# Tarea 2 - Compiladores
+# Fuente de ejemplo CoffeeScript
+#
+
+# Assignment:
+val = 1
+
+# Conditions:
+(number = 42 + 10 * 3; alert number) if val < 1
+number = 0 if val > 0
+
+# Functions:
+square = (x) -> x * x 
+cube = (x) -> square(x) * x
+print = (msg) -> alert(msg) if msg?; msg
+
+# Arrays:
+list = [1, 2, 3, 4, 5]
+
+# Existence:
+alert "I knew it!" if elvis?
