@@ -1,0 +1,8 @@
+#
+# Tarea 2 - Compiladores
+# Ejemplo Factorial
+#
+
+fact = (n) -> f = n * fact(n-1) if n > 1; f = 1 if n <= 1; f;
+
+alert fact(5);
